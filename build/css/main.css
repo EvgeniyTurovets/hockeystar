@@ -703,7 +703,8 @@ img {
   background-image: url("../img/shtab/after.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-top: -1px; }
 
 .shtab .title {
   margin-bottom: 100px; }
@@ -857,7 +858,8 @@ img {
   padding-left: 30px; }
 
 .accordion__content ul li {
-  list-style: circle; }
+  list-style: disc;
+  margin-bottom: 5px; }
 
 .accordion__content a {
   color: blue; }
@@ -894,7 +896,8 @@ img {
   background-image: url("../img/cost/before.png");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: -1px; }
 
 .cost:after {
   content: "";
@@ -904,7 +907,8 @@ img {
   background-image: url("../img/cost/after.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-top: -1px; }
 
 .cost .title {
   color: #fff;
@@ -1122,6 +1126,10 @@ img {
 .swiper-button-next,
 .swiper-button-prev {
   display: none; }
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: none; }
 
 .swiper-container {
   margin: 0 -20px;

@@ -829,6 +829,7 @@ img {
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #fff;
+    margin-top: -1px;
 }
 
 .shtab .title {
@@ -1016,7 +1017,8 @@ img {
 }
 
 .accordion__content ul li {
-    list-style: circle;
+    list-style: disc;
+    margin-bottom: 5px;
 }
 
 .accordion__content a {
@@ -1066,6 +1068,7 @@ img {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-color: #fff;
+    margin-bottom: -1px;
 }
 
 .cost:after {
@@ -1077,6 +1080,7 @@ img {
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #fff;
+    margin-top: -1px;
 }
 
 .cost .title {
@@ -1339,6 +1343,11 @@ img {
 .swiper-button-next,
 .swiper-button-prev {
     display: none;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+    outline: none;
 }
 
 .swiper-container {
