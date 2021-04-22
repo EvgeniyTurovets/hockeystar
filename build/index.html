@@ -7,8 +7,9 @@
     <title>hockey star camp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap&v=f62ff6701b949094065c91dc772bfb2a" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css?v=f62ff6701b949094065c91dc772bfb2a'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
 </head>
 <div class="app">
     <header class="header">
@@ -24,10 +25,10 @@
                 Хоккейный<br> лагерь
                 <ul class="social-icon">
                     <li>
-                        <a href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+                        <a target="_blank" href="https://www.facebook.com/starhockeycamp"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
                     </li>
                     <li>
-                        <a href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                        <a target="_blank" href="https://www.instagram.com/starhockeycamp"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
                     </li>
                 </ul>
             </div>
@@ -36,31 +37,31 @@
             <div class="ancor_menu">
                 <ul>
                     <li>
-                        <a href="">О проекте</a>
+                        <a href="#sec1">О проекте</a>
                     </li>
                     <li>
-                        <a href="">Даты заезда</a>
+                        <a href="#sec2">Даты заезда</a>
                     </li>
                     <li>
-                        <a href="">Тренировочный процесс</a>
+                        <a href="#sec3">Тренировочный процесс</a>
                     </li>
                     <li>
-                        <a href="">Возрастные группы</a>
+                        <a href="#sec4">Возрастные группы</a>
                     </li>
                     <li>
-                        <a href="">Тренерский штаб</a>
+                        <a href="#sec5">Тренерский штаб</a>
                     </li>
                     <li>
-                        <a href="">Информация для родителей</a>
+                        <a href="#sec6">Информация для родителей</a>
                     </li>
                     <li>
-                        <a href="">Виды пакетов и стоимость</a>
+                        <a href="#sec7">Виды пакетов и стоимость</a>
                     </li>
                     <li>
-                        <a href="">Видео и фото </a>
+                        <a href="#sec8">Видео и фото </a>
                     </li>
                     <li>
-                        <a href="">Контакты </a>
+                        <a href="#sec9">Контакты </a>
                     </li>
                 </ul>
             </div>
@@ -107,8 +108,8 @@
                 </div>
                 <div class="proekt__item__title">Проживание и питание</div>
                 <div class="proekt__item__text">
-                    Участники лагеря, которые приобрели пакет «Полный пансион», размещаются в двух- и трехместных номерах отеля г. Мариуполь. Для них организовано четырехразовое питание при отеле. На ледовую арену и обратно детей привозит комфортабельный автобус. Участникам
-                    с пакетом «Базовый» предоставляются спортивные перекусы.
+                    Участники лагеря, которые приобрели пакет «Премиум», размещаются в двух- и трехместных номерах отеля г. Мариуполь. Для них организовано четырехразовое питание при отеле. На ледовую арену и обратно детей привозит комфортабельный автобус. Участникам с пакетом
+                    «Базовый» предоставляются спортивные перекусы.
                 </div>
             </div>
             <div class="proekt__item">
@@ -166,6 +167,7 @@
     <section class="tech-procec sec">
         <img class="tech-procec__img-pole" src="./img/tech-img.png">
         <div class="wrap">
+            <div id="sec3"></div>
             <h2 class="title">Тренировочный процесс</h2>
             <div class="tech-procec__first-text">
                 Тренеры школы Evolution Hockey имеют многолетний и успешный опыт работы с юными хоккеистами. Они точно знают, как сделать из ребенка звезду хоккея. Поэтому весь тренировочный процесс профессионалы делают уникальным и интересным – таким, который призван
@@ -210,7 +212,7 @@
                 </div>
             </div>
 
-            <h2 class="title" id="sec3">
+            <h2 class="title" id="sec4">
                 возрастные группы
             </h2>
             <div class="tech-procec__wrap2">
@@ -254,16 +256,15 @@
                 </div>
             </div>
             <div class="tech-procec__bot">
-                В группах по 25 участников. За каждой закреплен тренер.
+                В группах по 25 участников. За каждой закреплены тренеры-кураторы.
             </div>
         </div>
     </section>
 
     <section class="sec shtab">
-
         <div class="wrap">
             <div id="shtab"></div>
-            <h2 class="title">
+            <h2 class="title" id="sec5">
                 Тренерский штаб
             </h2>
             <div class="shtab__wrap1">
@@ -338,10 +339,484 @@
             </div>
         </div>
     </section>
+    <section class="info-sec sec">
+        <div class="wrap">
+            <h2 class="title" id="sec6">Информация для родителей</h2>
+            <div class="accordion__wrap">
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Что необходимо взять с собой участнику в хоккейный лагерь?
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Участник должен иметь: хоккейную форму; клюшку основную и запасную; тренировочную майку; легкий спортивный костюм для СФП; футболку, шорты и кепку; плавки; кроссовки; скакалку; чехлы для коньков; полотенце, резиновые тапки, купальные
+                            принадлежности.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Какой возраст участников хоккейного лагеря?
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>В лагерь может записаться молодежь в возрасте от 10 до 18 лет.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Могут ли присутствовать родители во время тренировок?
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Родители могут присутствовать во время тренировок на трибунах Mariupol Ice Center, но ни в коем случае не вмешиваться в тренировочный и учебный процесс, не обращаться к детям, не выкрикивать их имена, не подзывать к себе.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Можно ли забронировать номера сопровождающим лицам в отеле, где будут жить участники?
+
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Для этого необходимо связаться с менеджером хоккейного лагеря и решить данный вопрос.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Какие документы необходимо подготовить участнику лагеря?
+
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>После подачи заявки на сайте лагеря, с родителем участника связывается менеджер хоккейного лагеря и оговаривает необходимый список документов. В частности, родителям необходимо подготовить:
+                        </p>
+                        <ul>
+                            <li>подписанный договор; </li>
+                            <li>согласие на обработку персональных данных участника лагеря; </li>
+                            <li>копию свидетельства о рождении или паспорта и ИНН участника; </li>
+                            <li>копию паспорта и ИНН родителя участника; </li>
+                            <li>медицинскую справку о допуске к занятиям хоккеем;
+                            </li>
+                            <li>оригинал отрицательного результата ПЦР-теста на COVID-19, полученного не ранее 72 часов до заезда; </li>
+                            <li>согласие участника на осуществление фото- и видеосъемки, обнародование и дальнейшее использование фото- и видеоматериалов;
+                            </li>
+                            <li>согласие с Правилами внутреннего распорядка хоккейного лагеря.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Как производится оплата участия в хоккейном лагере?
+
+
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>После оформления заявки на сайте лагеря с родителем участника связывается менеджер хоккейного лагеря для выставления счета, который оплачивается через банк (20% предоплата). Окончательный расчет производится при заезде в лагерь).
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Можно ли вернуть оплаченный аванс в случае отказа участника приехать в лагерь?
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Аванс при бронировании не подлежит возврату при отказе от участия в лагере.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Будет ли организовано медицинское сопровождение детей?
+
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Во время лагеря участников будет сопровождать доктор-травматолог и по необходимости педиатр.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Предоставляется ли страховка участникам хоккейного лагеря?
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Организаторы лагеря предоставляют каждому участнику страхование от несчастного случая.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__intro">
+                        <h4>Как я могу с вами связаться, если у меня остались вопросы?
+                        </h4>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Вы всегда можете позвонить нам по телефону (063) 855 11 75 или написать письмо на электронную почту
+                            <a href="mailto:hockeystarcamping@gmail.com" target="_blank">hockeystarcamping@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="sec cost">
+        <div class="cost__fon">
+            <div class="wrap">
+                <div class="title" id="sec7">
+                    Виды пакетов и стоимость
+                </div>
+                <div class="paket">
+                    <div class="paket__col">
+                        <div class="paket__name">Базовый</div>
+                        <div class="paket__price"><span>До 10 мая –</span> 5 500 грн</div>
+                        <div class="paket__price"><span>После 10 мая –</span> 7 500 грн</div>
+
+                        <div class="paket__vhodit">
+                            В стоимость входят:
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="34" viewBox="0 0 38 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="38" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAiCAYAAAAzrKu4AAAD6klEQVRYhcWXaYiVVRjHf/cqk0qBpI6KUU3RZmgi0ze1KMgszeiDYBkVCmUuOImB2GJKi7aQ1HRpinDJFqNNrGjBsiSDSAK/uIBOhRs2kEFpak489LvxInOX91ylPwx33vM+y/99zrOcU/i0dAdVcDXwITDT39OByUDJ3+8r2SvWcLQc6ACeBUaeBlIjgGeAl7VdEbWIzQUipPOAdUBzA6RC9x2gDZim7WRi24DHNRK/XwFNCaRCJ3SfyNja1gixwEpgLzDL544EYmWd+4F92qyKeoiVDZ4HLAJuBpblILVMnUXamFmPUu86jR8Brgd+AJ4GbgN+AV6soTcbuAl4AVgDtGqrJuqNWGCH2zkB6AcstMoqYYQyfSQXutvrdZaHWGAV8Afwo3nzeYVKbfZdh7KhsyqPo3q3Mov4+q3AaGAJ8B5wHXBMmSbX4t184KiyuZA3YoG/gElAAdgAbLZhllFybYMyk9TJhZSIBXYDDwBvGa23jU5goPm00bXdKQ5SiQU+AMYATzkdIpeOO19j7Vvg/VTjjRDDqvsSmOFz9KsbJHdtI4YbJXbc5vuNbSRy6jVgnO+SkZL8WTTZZOdaqZFrr7iWMlP/Q6PEogK/s0e9bstY4Frp/yI230a60GPMufasaa41Zyo1N1JzLJL8TmAscCmw2ArFfIuZerv/xxj6KK+DlIhdATwP3AqcNK+mAwf8m+HaSWVWAMPPNLEBjpt7gE7gJUlsyshssvGWlLkbeFfduhFbebZfGYrnA3tU7gVckjkRxPMtNs/N6jTr+FQ8CXyszKvqxCRYD/yt7OXArsxzC/Az0BU6RW8/g4GfzJMWv3SPF5ArfY5jzxQr8CqrLxK9uwdi3b4LmVHqTNFGpzZH6qNTn2PkEFzWFxV6zi+LU8BlQF8bZauRHGI7CMPnAG8aqa4qW9OlzBvq7NDGEG226qOvPkfLIbgML3pr+ULWh4HxwF02zT+BiY6Zx2wJaz1nbakjX7You1Yyj2prorbn6Gu8vls8x7WVL7w3AkuBQRosaqjL6ir43OkReXlmC88CLlK3qE5sye++D90HbS8X+r67Bx+BQ8AjwCe1buKVEM6mAvcCFwA7gV9N5AF++QlgNdBudHIhtcG2G6HZVe6HwxzwGx3qxyrI9YjUkTTdiFW7tO71yjbURpsLqcSO2qeuqRD1grekdk8Z1aq3R6Ru5W92/TYrbp/OT3i0HmqzjELpn0nuM04s+tLD/DsJDjs9BjodguB+C6HgCSPX1a0RYnGsiUEeDmN2RmJHcywjKjMuKfcBXwOf5XWQ2i4CMZYecuZdDBz0OB3Ri6jFZSS2MuZqPgD/AB2u7/oBwrR1AAAAAElFTkSuQmCC"/>
+                              </svg> Ежедневные 3-разовые тренировки на льду
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAADNUlEQVRYhcWYa2iNcRzHP7a9QLRJWisatSiLN+RShF0MjReWcttSKIk0RYpSGmleSIpyJ7daqG0ucxmFMsYbUUMhK5clRHjh1m99n/X3eJ5zOP+T/erUOf/n//yfz/ndvr9zejTtXgAwAjgD9APmAM38Z8sShD14O9AGnAZmh2B6ARVAHnAVaE03ZoY8YRBbgFNAlWCKtGcgcA9YIehLQLVzxiCgfzpA+skTgdUL5gSQD1zTa7zWJwCbgVHAXeAx8Er7e/qAWE7sB2aFYMYCV+SB5cBPXXsAfADO6XofYIA8t8EHpFk5ccSBsUMvR0CYlQO5wHFgLfANeA9sBab5gODA7AUGKxRREAXAIXmjOnRWvoC8QAKYMQk8USDAffKKaxbGGqA2HSAWjqiccCGOAusiIM4DK4GLviC9BOADcSxVCBekQpXQLRAuiHXMR90F4YJY254JFOqzJeOtv4Aoczqwl2XpZtOOTcAdhShXJZrMEx9jtClljyC9mai1HTElGg5HfYQ2xdlUtYZWlfpvcpARumkPcDiiWYXDEZaDZDA2a5zUno3AJOCguyHLeW8qWqiHJvLESx1YJYgwTDhMBrETmA60aO0m0CFFfxv2yGcgUyIWB0GMNsV5JgrC7BPwHegdLGRWlo8M3n8BhgPLgDdAKXAgpkSfArfl7ofOGNGmz/P1kCgIJJD2hbdFgZidlXgtBYYAqzU4RVkimEQQVhSVwFyFmXBozL5qphgNlABNMRCBRYUpLhxmjcAq4Adw3S2KrD+O/ncLYBYBfZOEY5yAG9U8bwioNR0gCCYvCcRCgTzRmk16DcAUAwmHJlVLFI4AYrIDYdYDGBrkSTpAUoXYBWTrl4N3jvhAlOqatQ0vj5R5QhQD7cEFH5A1KvWoEl2SBKJEPahLm3xAcoDnoTVrVjNUyonC8UxNs0sOfEAuaF7JUa7VqrW/lleiIEqccPymTT4gNTq0QyJWLG9kO5NeOCdaIoRyMVDnUzUmB/Mk5aYtL7S+Xh2zQX0iW+Fo1/7wCDEMeBf8P5JuM62yjmnNyvpEZ4nKLCcMxjxhEKY3Relq8WGzcTDuP5RAm+rME51gcP8XDxoGiR3mhx4AAAAASUVORK5CYII="/>
+                              </svg> Ежедневная 2-разовая СФП
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="34" viewBox="0 0 37 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="37" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAACO0lEQVRYhe3YT4hNURzA8c8wGWaIRmRhMTaMP7GRGhSTaKzITsRKViwoZIXZoiSsECslf8JG5M9iLGQhKZamyML//39SozP9nl7PfTNv7nvPWMy3bq937vmd+73n3PM7596G6yc2yGAhDmEJfuACduJVUdVO3MoKrpIvozLi5+EmLmIK5kb5bYwrqjcRd9FQ46MlS2o/juII3uEZNuMDNtahZ/4iS6oD50vK+nAJS4dLqhkfM8pfx5DVnSyp7xifUd5aRrbmZEndw9qSsoYo66lSYDpWDVYpS+oAdmMLxmIqjsfv2Zwy7TiFp1iRR+ohukLqG15EauiM/wU+4+sg7S+KHHcfnzAnbnhAGsuc7IkGU0/9iqOUlMvulIlfiT1YgGPYGhOlIoqllmNxDFNeWqONJhzGmujRIdEYDVzGbNyI4cpLR8SnnvqZt5EktS1SQHukg7ykGbosnqHcQgWp9eiuUGhGPCfFpMkyDeswGaerESpIpQX3UYX1t2N1TO1i0g1dwcm0ytdCqqloS7I31rgnZeqnITqHfdVeeCAKeepT/KZsO2sI8S31lMpDV/TqfyWVEuuYGrr8oRqpuvFfSzWXOZ/y0oR/6NNPSgkvMTN2B6UcjPxzpkx8Wz3SQ5K6hl3YlHF+dOSmLB7EG8+kGjt1N8YW4yrexGxqqzD4OXbUWKif9Ey9jZfO+XiM3npcaKhSBXpj3eobXqWRPFU5I1KVMiJVKaVS6VtB+uRTIH0KKn5FSpvB93U1wm9frWG3B90nBgAAAABJRU5ErkJggg=="/>
+                              </svg> Семинары
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAADIElEQVRYhcWYQUhVQRiFv/d4GxXK3GtSYFKrVurGKDDeJikIhFqZhpAEpYIgtCmKAis3GhIobYIgSBSiDJRa6GvVKhGhMG2biaAuX/xxblynuffdh6/XgdnM3PnPmbnz/3PuTb19cpkiUAe0A63AcaAeqNL0bWAVWAI+ANPAWtLQ6YTPZYF5YBloAxaAXqAROKjWqL4FPbOsOdkkBJkC4yeAMeAI8Ai4AGxGPLsFfAfeAyNANdAJPAW+AteAz1FEcTvSA+S0zQ3A4xgRPmxqToNi5BTTC9+OpICHQAdwFlgsgtyHXeAW8Bp4CRwD+oF8+FmfEBNxDmgG1vcpIoxFxZxTX1940H01PdqJMwVETGhFvjYRM29dsTvc1xQWYgdzGLiYYCdqlCGHnNarsTisi2NYnH8JsewYKeJM7OhAhttOwrmLyqwxV0hWKXovYaBS4J44s2Ehg6oTu2UUsivOwUDIYaAJmCyjiACT4q5LK1XfFVmsSoVNcbdndIHNewJPxGSAreKVpz+vsamIeRvAFafPuFszukVHPZM6lY6+TDARM57+oC/lGasUjyvkE9Cd0VX+JWIFz4t8ZbbiZxFj1RELNu76tPzEVhFkpYZxVyX1I/8caTmrA/9Rg3FvZ2TvjsrUuLgUcVjzOpgbTn+NykHUYfXBuFcz8pgn5azCmJQf8aFJfe7BNBH3gY8R83xF07iXMnJPbbqEwnDTLIypiFWnJOJ8zFwXp62opbXFbUqvcqNa3NMm5JtWYQWs3OgU91qQvg9k3SrKKKRCnMb9xwa8keUfKqOQIXEa9x7zbN8dObntJC6t0nOuolLURQtwQ2b6N8KV1T5+BmT5awsE+qF746fTRjUWh1pxDIQ/uNwSPw68kOWPE9OlVPW1rgIi5sQxHh7w3TX9SumctrBUaFHMGXHsgU9IXqf5NjAL3NlnNlUoxqxi9rlfeVE7EmBch8kc3Apws8iiV605K4rR7L6OMAr9DbDDdEqW39z2XXlMs3fmrMzUBF7GblG7wOzusLJtFdOK1dUgReNQSEgAC2Qt/KOmO+ZHjYm9nvhHDfAL7C65XgmUNqUAAAAASUVORK5CYII="/>
+                              </svg> Услуги доктора
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAB50lEQVRYheXXzYtNYRzA8c9cV64irCwmMRTJBhsl4yUKKzZsyH6kLP0Dig07pjRbGy8LbLz8ASZk6yVhNyl5iTReQk/9po6Z03XPuc+da/KtX9373POc++35Pec8v9/AndEjShjCGHZhoOyCTHzHNYw0Su6X/vgGXmAQu/EWB+O3nLEOyzDaLBFZi5XYjB+YwHkcCsGcvMJxPCtbkYV4HxJTJJlFPUpPkplftiJlfMIB/OqRzGSnItexNNPGXYLXsTem+NqpSOJjBokiH4pfyvZIX/hnRKqkJrEF6yvO+Yar8fLKJrINwzVEbuNdTpFzEdmZs3vkLPZVnPM5Ds+se+RS5LsKX/4mUUfkZUR2qoqsiqhCSs2j3Csygr0V56TUbJ92mnctcioiO3P28T0Zj2IZ93BhtkQetCkHntaVqCNyPyI7/1090sK8foukWvdhtCN9E0mtyS08wZXZFNmIPfE5peJyHHhH8bPdxGZYLyiMLe6ibWhFL3sM+7EaO6JKa0szSrjWtIsma4qM4zBuRne4tdM2pBESxcZ6E97UFEncxc54A090OqkRORwqjK2I3rcbxqObK2N5nMgzRFJOL2JNrMaZGOsFac+k82jG/ZNIqjHSCjzHY2zA6Wi4c0d6jFO6Tvxhgd/DRmyb6Gu4pwAAAABJRU5ErkJggg=="/>
+                              </svg> Страховка
+                        </div>
+
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="37" viewBox="0 0 34 37">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="34" height="37" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAlCAYAAAAnQjt6AAADqklEQVRYhcXYe8ieYxwH8M/77N2cRjGybDlEmqVYazE2p4ZoazZNhJJz+MPmdcq5sGSprTSFkEZOOWZmzjk1yzm8TkPYJoRMzvRbv5vb7Xnu11Pve/v+89Rz3dd1fa/f9Tt9r55li4/WBbbB05iLh2qm9WAmjsXeeBf71G3T6oYFLkA/bsQRHb7ZBSswH4/jEOyJDeoW7u2CxDAciYnYAsvxKZ4vfXMA7sBVuAa/5/9fYzQ+7rR4NxbZCZvhGHyIM7EEG+f4zrgTJ2BBiURgI/xct3g3ROJKJmEc3sAneB2XpE/cnAQeqMwbnb9rBotI4NW0yGm4Lx33VByFLXF1mzmz8hr/qFu4Gx8p48Hc4J60zHW4GL9VvtsE5+D4gRasIxIn3Atj8QvewUv4McefwmKcn5ZdXpkfUXI7PsCvODhJv91us3ZXsz1uw0c4K8lENCzE2lz80DxEXMW6nPde/kZ0zcHLmIHxGUV9Gc6rcHL6VUeLxAa3pKm3zbArI8L2cJyLm/AIVmPTjKII7Wn4HLfi/ooFYvOpSWxmEv5h/UAps+6Hu/Lun625sgLb5YknZcaNqFiZ5PoHmBtWuzYPOz1CvSAyCm/ipErqHpGOdje+/A/kukG4xWMZfYsKH7kIyyokxmaqnlNJToOFWPMMXIiRvXm/J2JCaYOReDSd9vIhIFHgrcxNs1rpEytKXh+4LL1+KEkUiJw0IyxyEB4uDWyeFhrXAInAa5gXFtkdL5QGZmdyWt0QkUiUY4LIDpn9CkzGEw2RCHyH4a0s42tLA2OyzDeF9SWjCN9yZexpkIT0yW9bWStGlQaWZnFqCltFSejNTSPVfpUbL2zYIhGd/a1M7RNLAwdmyW4Ku+GVVja/U0qb9mf73xT2x3NF4ZmeFVFe1aqGSERTvWtU++Jqvkn90TSmZt/7UxG+0Qyd8j8QmZ3N01955PrsrMY3SGJEBsa9ZSJr0iqXNkjksPTPdSrN85XZR+7REJF5eROqRCJaFmUv2a3w6hbTUoKubEckEA3R1qnehgq9KdDnl9evEvkep+OKrMJDgb5MF0vriEgRvSSdd7Ar8ZR8Y/mXxTv5Ql+KqQU1ZIbla9BxKcwnD/AYMyFVwtxsmv+BTto3mpXItKFvQ0idh/eTeEjQeLCJF4CQBJ9hQ+yYGvnJlCYv4otUBKEOQ4yHbLmh3YZ1Ijy6tlBxofIjDQ9P68TbSDTb+2Z5KBDjUUlDMcbY2akAw++eyUgp98Z/A38Ca3TFfqh6Rx4AAAAASUVORK5CYII="/>
+                              </svg> Спортивный перекус
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADt0lEQVRYhb2YW0hVQRiFP/VYlnRRqUy7UoGVafTgS1EYQRFUVBhRdEHEHvIlutBLImHQi5RE9RJELwVFghFkBd0MKgjMbpRhRZKlgaWViZbGyNqy2+3b8bbgMOfMzP+v5eyZNf825vrprUSJmcBGYDkwH0gH4oA/wEfgBXALuAy8iyZ1bBRzc4BrwGsgF7gBbAPmAElqt6k/V/OuKS4UIiEmjQLKgB3ACWAn0OQy75tW4h5wHJgE7AFuA+eAvcCvgazMFOABsBDIAg56CHFDk+ZnKf6B8vVLTBpwB6gBlgH1IUU4Ua/4GuVLi1ZMAnAVuA/kA139FGKhS3nuK29CNGKOAp1AIdATQJQKNKr1Q4/ydSp/KDHZCtquwCDsAiarDUKn8haKJ1BMMXAaqAuRPF4ijqmNDxFTp/zFQWKMga3RUQ6DDcB3YJ/aDSHjysST7icmT+7ZGDJpEXAK6FZbFDKuUTx5fmJWAFUeCY4AV4BHQIOefyZwVuOmXaD+Bs27ojg3VImvD04HNslKPYLTFbwbeAV8Bj4BHRpv04marDYDOAm0eOR7KIfug/2ijNFyTwS+uASPACqAscAqoN2DxGC0/vI27SO3UzlBLh1n2Yf9MY1T+9WDwCTcpMBLEueGERrv1nwve/iqBbB4/xHzW63f8TSrsVaXYInHnBKNrwtYPYunz93tYn5oIMUngUGrbN1LdLzGWwPypIjvp5sYgzfA3IAkyD1rbb/tV0Gtm7u6YK74+uAU8xhYEiJRlkgXATd1qm7qd63Gg7BEfJ5iquSMfpgKJAOHgGrgCTBLbbX6kzXPD2ucnuYUUwnMlpn5LW+39pjxkv3AW7UZ6u/Wdy9kiqfSPm58JtVRXywFntmOeJcKbQvxMsD3PmQzFGOvg9Jtmz5Jgqpt4x0RuWmifVc7YExunuZZ4vyE4DJuVumlTNANvfyxqsBMobwYGO/y+eBVmUWBBOVxy79Y/PkRWXy2nl+O7S4x7jhNVVm7lr6/aFee6RJlVY/J4jX1UIV1UZbokrwIrNQL2Wbg/ABXxA1bgAu6kwzfU8vNrdPUo3LQbObD6hsp1TGD+KlUXsSTKt7/LspEXVrNQ7AabmgWX6I1ZomxyoO7QPkwiSkXX4VVAVhiTqmjYJiEWCgQr+HvrfRM3bpeZpegz58hFjFGGxi9u5v38ycRlZnm2T23TTZiDgyRkGS5e5yjvzRWxuM8MRGf2nWgaFF+J+f4oH+JmLvEiB0s+L7k+Ykxldpqn5q4vzjjGgj8BSW318IPh4PEAAAAAElFTkSuQmCC"/>
+                              </svg> Мастер-классы от звезд украинского хоккея
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="34" viewBox="0 0 37 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="37" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAAC30lEQVRYhd2YSWgUURCGv8RxTUSNBw/qoKBEJURw15NGY/QgxmW8RDwGDYJe9KJgQFxQUPDg4MkF9aBgwlw0QYJ6EEERghclChIXXNAojiAaM1Lwj/Q0PU53050Bf2hev1fvVf39ul51VVd0pVuyQBWF6AA2A/OBSS5ZFBgAeoEbwCaXvu8JEapwDDYDe3V/ApgSA6n3QBNQI1KdDlkuUWTRkNqmGAh52SmAF6m7wOuYyeSxH3hRjJS9shxwR+/70TCRytuZAKzMu5GRysiHjNSbYSTkxGxxMFIZI7WxDCTcsI1YlR+rBOpd3u+FduBLBFd7CTvGoz6hYzmjxOTjwIUIduRdCbnxqCkWEtz4AbyMgJQv+CXlRAo4EGD+EeB63KRuAx8DzO8NaiAMqQHFs9hQGafysIiC1DggDTxVO7acpCy16QM+AbOAVkXmzxp3pyS+EcanDGOAS8B24KE+T4Y1wFRgCXAZmKxwEghhdyolIp0yehLoBk6p3yF5KozyMKQWy3f2ACOBHqAWuALMBO4BoyRPa37spBqBa8AtYLUc3fzrIrBVLrEWuKmg2RiGlDnl1QBr7gPrgdHAeAXSQcl+q1+l3Vqn+X5hPPqscAj6ICiALgS+KnM8qF3ZAhzTKawGHgMTgyq3ncoqwbOrwec6M/hL4WAD0KYMYLf6HySv9qmvwcEh61XN+MF5fWoOK6WZ51qzAzgUIN3pcXDIeTl6rZ78X9gJ7ANOKzaZsy/SA5rzn5G8tYSeNtkrgFfwnAtsA84q+JkzuzGkQnKBTuGgslIrXEcobpk8WeSEf9OrNztvgWdepJodY0sd91ZuTfNQmtMJfA50AbuAfmA6cE5GlikseLmGlXB1Hvb+kso4KuI8utXWuRe4MEcO3a/hV8BP3T/wUfJ3K6Ytd4yVvZo5qqsA/20+FTmiIpXUa0hGoSwKUhYWngAr1Fq/rKTsE2UxykKK/aCw1vo2Hg7AH9anpmr0BBJeAAAAAElFTkSuQmCC"/>
+                              </svg> Сертификат об окончании Hockey Star Camp
+                        </div>
+                        <a class="paket__link" href="">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                    </div>
+                    <div class="paket__col paket__col2">
+                        <div class="paket__name">Премиум</div>
+                        <div class="paket__price"><span>До 10 мая – </span> 13 000 грн</div>
+                        <div class="paket__price"><span>После 10 мая –</span> 16 000 грн</div>
+
+                        <div class="paket__vhodit">
+                            В стоимость входят:
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="34" viewBox="0 0 38 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="38" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAiCAYAAAAzrKu4AAAD6klEQVRYhcWXaYiVVRjHf/cqk0qBpI6KUU3RZmgi0ze1KMgszeiDYBkVCmUuOImB2GJKi7aQ1HRpinDJFqNNrGjBsiSDSAK/uIBOhRs2kEFpak489LvxInOX91ylPwx33vM+y/99zrOcU/i0dAdVcDXwITDT39OByUDJ3+8r2SvWcLQc6ACeBUaeBlIjgGeAl7VdEbWIzQUipPOAdUBzA6RC9x2gDZim7WRi24DHNRK/XwFNCaRCJ3SfyNja1gixwEpgLzDL544EYmWd+4F92qyKeoiVDZ4HLAJuBpblILVMnUXamFmPUu86jR8Brgd+AJ4GbgN+AV6soTcbuAl4AVgDtGqrJuqNWGCH2zkB6AcstMoqYYQyfSQXutvrdZaHWGAV8Afwo3nzeYVKbfZdh7KhsyqPo3q3Mov4+q3AaGAJ8B5wHXBMmSbX4t184KiyuZA3YoG/gElAAdgAbLZhllFybYMyk9TJhZSIBXYDDwBvGa23jU5goPm00bXdKQ5SiQU+AMYATzkdIpeOO19j7Vvg/VTjjRDDqvsSmOFz9KsbJHdtI4YbJXbc5vuNbSRy6jVgnO+SkZL8WTTZZOdaqZFrr7iWMlP/Q6PEogK/s0e9bstY4Frp/yI230a60GPMufasaa41Zyo1N1JzLJL8TmAscCmw2ArFfIuZerv/xxj6KK+DlIhdATwP3AqcNK+mAwf8m+HaSWVWAMPPNLEBjpt7gE7gJUlsyshssvGWlLkbeFfduhFbebZfGYrnA3tU7gVckjkRxPMtNs/N6jTr+FQ8CXyszKvqxCRYD/yt7OXArsxzC/Az0BU6RW8/g4GfzJMWv3SPF5ArfY5jzxQr8CqrLxK9uwdi3b4LmVHqTNFGpzZH6qNTn2PkEFzWFxV6zi+LU8BlQF8bZauRHGI7CMPnAG8aqa4qW9OlzBvq7NDGEG226qOvPkfLIbgML3pr+ULWh4HxwF02zT+BiY6Zx2wJaz1nbakjX7You1Yyj2prorbn6Gu8vls8x7WVL7w3AkuBQRosaqjL6ir43OkReXlmC88CLlK3qE5sye++D90HbS8X+r67Bx+BQ8AjwCe1buKVEM6mAvcCFwA7gV9N5AF++QlgNdBudHIhtcG2G6HZVe6HwxzwGx3qxyrI9YjUkTTdiFW7tO71yjbURpsLqcSO2qeuqRD1grekdk8Z1aq3R6Ru5W92/TYrbp/OT3i0HmqzjELpn0nuM04s+tLD/DsJDjs9BjodguB+C6HgCSPX1a0RYnGsiUEeDmN2RmJHcywjKjMuKfcBXwOf5XWQ2i4CMZYecuZdDBz0OB3Ri6jFZSS2MuZqPgD/AB2u7/oBwrR1AAAAAElFTkSuQmCC"/>
+                              </svg> Ежедневные 3-разовые тренировки на льду
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAADNUlEQVRYhcWYa2iNcRzHP7a9QLRJWisatSiLN+RShF0MjReWcttSKIk0RYpSGmleSIpyJ7daqG0ucxmFMsYbUUMhK5clRHjh1m99n/X3eJ5zOP+T/erUOf/n//yfz/ndvr9zejTtXgAwAjgD9APmAM38Z8sShD14O9AGnAZmh2B6ARVAHnAVaE03ZoY8YRBbgFNAlWCKtGcgcA9YIehLQLVzxiCgfzpA+skTgdUL5gSQD1zTa7zWJwCbgVHAXeAx8Er7e/qAWE7sB2aFYMYCV+SB5cBPXXsAfADO6XofYIA8t8EHpFk5ccSBsUMvR0CYlQO5wHFgLfANeA9sBab5gODA7AUGKxRREAXAIXmjOnRWvoC8QAKYMQk8USDAffKKaxbGGqA2HSAWjqiccCGOAusiIM4DK4GLviC9BOADcSxVCBekQpXQLRAuiHXMR90F4YJY254JFOqzJeOtv4Aoczqwl2XpZtOOTcAdhShXJZrMEx9jtClljyC9mai1HTElGg5HfYQ2xdlUtYZWlfpvcpARumkPcDiiWYXDEZaDZDA2a5zUno3AJOCguyHLeW8qWqiHJvLESx1YJYgwTDhMBrETmA60aO0m0CFFfxv2yGcgUyIWB0GMNsV5JgrC7BPwHegdLGRWlo8M3n8BhgPLgDdAKXAgpkSfArfl7ofOGNGmz/P1kCgIJJD2hbdFgZidlXgtBYYAqzU4RVkimEQQVhSVwFyFmXBozL5qphgNlABNMRCBRYUpLhxmjcAq4Adw3S2KrD+O/ncLYBYBfZOEY5yAG9U8bwioNR0gCCYvCcRCgTzRmk16DcAUAwmHJlVLFI4AYrIDYdYDGBrkSTpAUoXYBWTrl4N3jvhAlOqatQ0vj5R5QhQD7cEFH5A1KvWoEl2SBKJEPahLm3xAcoDnoTVrVjNUyonC8UxNs0sOfEAuaF7JUa7VqrW/lleiIEqccPymTT4gNTq0QyJWLG9kO5NeOCdaIoRyMVDnUzUmB/Mk5aYtL7S+Xh2zQX0iW+Fo1/7wCDEMeBf8P5JuM62yjmnNyvpEZ4nKLCcMxjxhEKY3Relq8WGzcTDuP5RAm+rME51gcP8XDxoGiR3mhx4AAAAASUVORK5CYII="/>
+                              </svg> Ежедневная 2-разовая СФП
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="34" viewBox="0 0 37 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="37" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAACO0lEQVRYhe3YT4hNURzA8c8wGWaIRmRhMTaMP7GRGhSTaKzITsRKViwoZIXZoiSsECslf8JG5M9iLGQhKZamyML//39SozP9nl7PfTNv7nvPWMy3bq937vmd+73n3PM7596G6yc2yGAhDmEJfuACduJVUdVO3MoKrpIvozLi5+EmLmIK5kb5bYwrqjcRd9FQ46MlS2o/juII3uEZNuMDNtahZ/4iS6oD50vK+nAJS4dLqhkfM8pfx5DVnSyp7xifUd5aRrbmZEndw9qSsoYo66lSYDpWDVYpS+oAdmMLxmIqjsfv2Zwy7TiFp1iRR+ohukLqG15EauiM/wU+4+sg7S+KHHcfnzAnbnhAGsuc7IkGU0/9iqOUlMvulIlfiT1YgGPYGhOlIoqllmNxDFNeWqONJhzGmujRIdEYDVzGbNyI4cpLR8SnnvqZt5EktS1SQHukg7ykGbosnqHcQgWp9eiuUGhGPCfFpMkyDeswGaerESpIpQX3UYX1t2N1TO1i0g1dwcm0ytdCqqloS7I31rgnZeqnITqHfdVeeCAKeepT/KZsO2sI8S31lMpDV/TqfyWVEuuYGrr8oRqpuvFfSzWXOZ/y0oR/6NNPSgkvMTN2B6UcjPxzpkx8Wz3SQ5K6hl3YlHF+dOSmLB7EG8+kGjt1N8YW4yrexGxqqzD4OXbUWKif9Ey9jZfO+XiM3npcaKhSBXpj3eobXqWRPFU5I1KVMiJVKaVS6VtB+uRTIH0KKn5FSpvB93U1wm9frWG3B90nBgAAAABJRU5ErkJggg=="/>
+                              </svg> Семинары
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAADIElEQVRYhcWYQUhVQRiFv/d4GxXK3GtSYFKrVurGKDDeJikIhFqZhpAEpYIgtCmKAis3GhIobYIgSBSiDJRa6GvVKhGhMG2biaAuX/xxblynuffdh6/XgdnM3PnPmbnz/3PuTb19cpkiUAe0A63AcaAeqNL0bWAVWAI+ANPAWtLQ6YTPZYF5YBloAxaAXqAROKjWqL4FPbOsOdkkBJkC4yeAMeAI8Ai4AGxGPLsFfAfeAyNANdAJPAW+AteAz1FEcTvSA+S0zQ3A4xgRPmxqToNi5BTTC9+OpICHQAdwFlgsgtyHXeAW8Bp4CRwD+oF8+FmfEBNxDmgG1vcpIoxFxZxTX1940H01PdqJMwVETGhFvjYRM29dsTvc1xQWYgdzGLiYYCdqlCGHnNarsTisi2NYnH8JsewYKeJM7OhAhttOwrmLyqwxV0hWKXovYaBS4J44s2Ehg6oTu2UUsivOwUDIYaAJmCyjiACT4q5LK1XfFVmsSoVNcbdndIHNewJPxGSAreKVpz+vsamIeRvAFafPuFszukVHPZM6lY6+TDARM57+oC/lGasUjyvkE9Cd0VX+JWIFz4t8ZbbiZxFj1RELNu76tPzEVhFkpYZxVyX1I/8caTmrA/9Rg3FvZ2TvjsrUuLgUcVjzOpgbTn+NykHUYfXBuFcz8pgn5azCmJQf8aFJfe7BNBH3gY8R83xF07iXMnJPbbqEwnDTLIypiFWnJOJ8zFwXp62opbXFbUqvcqNa3NMm5JtWYQWs3OgU91qQvg9k3SrKKKRCnMb9xwa8keUfKqOQIXEa9x7zbN8dObntJC6t0nOuolLURQtwQ2b6N8KV1T5+BmT5awsE+qF746fTRjUWh1pxDIQ/uNwSPw68kOWPE9OlVPW1rgIi5sQxHh7w3TX9SumctrBUaFHMGXHsgU9IXqf5NjAL3NlnNlUoxqxi9rlfeVE7EmBch8kc3Apws8iiV605K4rR7L6OMAr9DbDDdEqW39z2XXlMs3fmrMzUBF7GblG7wOzusLJtFdOK1dUgReNQSEgAC2Qt/KOmO+ZHjYm9nvhHDfAL7C65XgmUNqUAAAAASUVORK5CYII="/>
+                              </svg> Услуги доктора
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="34" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAB50lEQVRYheXXzYtNYRzA8c9cV64irCwmMRTJBhsl4yUKKzZsyH6kLP0Dig07pjRbGy8LbLz8ASZk6yVhNyl5iTReQk/9po6Z03XPuc+da/KtX9373POc++35Pec8v9/AndEjShjCGHZhoOyCTHzHNYw0Su6X/vgGXmAQu/EWB+O3nLEOyzDaLBFZi5XYjB+YwHkcCsGcvMJxPCtbkYV4HxJTJJlFPUpPkplftiJlfMIB/OqRzGSnItexNNPGXYLXsTem+NqpSOJjBokiH4pfyvZIX/hnRKqkJrEF6yvO+Yar8fLKJrINwzVEbuNdTpFzEdmZs3vkLPZVnPM5Ds+se+RS5LsKX/4mUUfkZUR2qoqsiqhCSs2j3Csygr0V56TUbJ92mnctcioiO3P28T0Zj2IZ93BhtkQetCkHntaVqCNyPyI7/1090sK8foukWvdhtCN9E0mtyS08wZXZFNmIPfE5peJyHHhH8bPdxGZYLyiMLe6ibWhFL3sM+7EaO6JKa0szSrjWtIsma4qM4zBuRne4tdM2pBESxcZ6E97UFEncxc54A090OqkRORwqjK2I3rcbxqObK2N5nMgzRFJOL2JNrMaZGOsFac+k82jG/ZNIqjHSCjzHY2zA6Wi4c0d6jFO6Tvxhgd/DRmyb6Gu4pwAAAABJRU5ErkJggg=="/>
+                              </svg> Страховка
+                        </div>
+
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="33" height="33" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAC80lEQVRYhdWXW4hNYRTHf+cYBxMziMklxpvBA+bFKLk8UDwhoeRSakLxojRpksmLTBO5jdRxeZBENKXGzIOE8uA6UjOSGpcycZrcb2PQqv/J8dl7n7PPrfxrd/a39/7W+n/rrLW+/xdpa16DgynAcWCO+yIPuAnUAp2ppkocu4OBVqAdWA/05pHASKAOuAJMBr76kZgLDAQ2A/3Ou23A8hBOLwIHU8ZvZfe5/LT7kSgFnngQMLTJQKbo9PiuX/ZLUx+WaOUrFKIqXSeBZyEcemGGx7NK2V+t94+BC0YiriS8DvwEXgITgUiOJLwwQfbNzyRgHbDYSKwCpgNdwEyN6wpAIIm9wDngvqLSEQViQI8+sHDVFJAAsl+pe/Mbi6oMZxfYsR/Mb6+RqAda1B+KiVb5rbecaAbOA0N9MrpQsJ7xEUhE5SABdBc5Et3ySzT9tzkhlsnkQpCw/rJD3fUb8ALYEjTBbdv5wG5gI7AJuKuSPAYMAvYXi8R2YCFwS+NLwCfgLHAoLIkqbe1hsQz44lRaQlv52DAkrFyvurtdjniliGRMwup3XB4JBKLQJfr/kohkUDGNkmp+V1Oa+SWuVnEdVgNTUwg1SV+USZptBRqAIwFOrBLWqhwHAO+lH6x0f8l+tUrXk0QqywWAnQdWKlGrJfta0uwzRviEuuQ9YIhJOOCyKu6faAclZp9WMkzdLq5xRcAcw2g5iWteueb1+U1wI/EUeK37Gwppo8jO0/MfaUgklXqFImd68rDsGd7Ijy+JDmA8MFxJ16ArG/RIwadihOw/CCJxW8xNee8SERc1Usp+GKPn8533trA9itSdIBIo6bqkim3vGAW803/6Gdgnon6wxPsAnJKeKFPF2LHvoSrkL3iRMAdHgWsa20nqDPAoi79kFrBUh+xkdA5kQsKFrWSDyjQsyjNRV14kLHSmByx0tolZiS5R0oaFbecW0WnaRRcldWU6EjvV4ez3u1RRNgQMVgWn1bQsIpZv1oH/APgNrMGfp1uYWogAAAAASUVORK5CYII="/>
+                              </svg> Ежедневный трансфер «отель – MARIUPOL ice center – отель»
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="34" viewBox="0 0 31 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="31" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAiCAYAAACnSgJKAAABs0lEQVRYheWXoU4DQRCGvzZ1RYBA1WAwYBBIROsrKktQNaThGRAVPAM0vAAVCAQIFBVIREWDwWAbTBNokJBN9sgw7O3t3l3SJvzJJLuzs/9kZudm9yr3F0cE4AOohxhaLIC1LKNaIJlxXIlw/hViVI0gLB1Lde5L+yZwItI9iOQe2PSfA28uA1/ku0DPju8iHSf2PcvjRFbBveaIWKLpW/y/Bbey1a6xD7SF7hZ48ugzERN5WxRQUzhM05fq3GBsq38cqPciJu3TyHEm5K12BhyIDetWtmIIFUyfmFtJ8AicoiI3jm+AiZ3vAYcFHBvMgCvF2UkWddon6tw6Ypyn2j99nEut9pp6pTyodX0bJVWt+32afsfBib3tFlXxStHSAp7Fhqmo+JAxdn8rhb8e86ldR44zIc98ZNNhpB9DEoC+4B4l5jLyrpUE+i4u0tuHVn5hZXp7SNrz9vbCaS/S251p/7/VLp13RQP4k6KCGArun6ONSXuCbeBS/buZiI6BlxiiPGlvABuilw/svOHZU7jaJebqs5p7bCmjyZQO49y8NlwwP/jvjgWX3syNXiNNDzD7Bkteh+Cx97M+AAAAAElFTkSuQmCC"/>
+                              </svg> Проживание в двух- и трехместных номерах отеля в г. Мариуполь
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="27" viewBox="0 0 38 27">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="38" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAbCAYAAAAQ2f3dAAAEmklEQVRYha2XC2hWdRjGf359uU3XXGpKppKmSZG1WXSxkqTECzXFUlarlLwQdjGhm5LGUioStQSzTMuUUigt102hmJWQ9wtZ0T0Lk8rV8jJtthmPPEf+Hc/37XP1wNj3P+d/3vP83/d5L6fFmvkVpUAR8BvQC/ga2EluOAe4DOgOFAD1wC5gK/ApcDRHO8JQ4FngAHBxGhgM9AQ+A64C3muCmAiMA+70QXYAXwJ/AbI3EOgD7AVeBOb6dzZcAywH7gYmA1fKUDugDigEWnqdCdcD84H9wCxgBVCbsDffe/WiicADwIIMNlPAc8AUYBFwjw6vix2APKAN0JiBWAvgMZ/qSeACG0kiJRwGXrcnRvnZZT54HAP87nnh9chjvwKnWxMdEh6eDYxwqLcH17sCNwAXAWcAvzus71gawpvARmAN8BowHGgIbAz0nvq4G9tZwPorTfDYGOB24NqA1FnAq8D3wG3AIWAz8AcwyPuq7VnhZ3tPmnwqZl96XB/3hDzWGVjrrOzqDIvQBXgGGGlPCFf7hOuA84CvEjzcEai0p8Y4jDX21ibgDT+P3/9D3EDKRqSd++zuMJQzgCrgXa9LnbWVTu8kUsIvztpyYCEwzNc/t0bnBHuVdH8mEZsALAV6AE/boHAmcDPwqNdKkOWuNXMzEIpDh7oLWGx7mFR3hxaXmfwkYgucFZ29qcr3dNqPXHCF8c7OKTmSirDYYZvq9QGHtsLrI/baCcQyQWJ/O7inBHgC+PskiWFJ3AKc6rXsXuffu5xMJxAr8O9qJ8MpXpdYvFiH0ldV3ECO2AAcBK7wdmXh2W6FX6gFJRGrcM0pcboP8T2d4jv/7uaUr2kmsaPunT28rnX36GKHDIpHL2VtbXDP22ISxb5/2P/bu3j+F+j5tsHztQ7tW06sCaHttMnt97re66jVRNmyN2a0OWgbO1yxha933gqstt6Oe6wo2FwX9LPd9h6u8J2aaPDZoGzuDXwTkDoN+Mnrj91bpzq8x+N6MDDayv+3u03hgrkNKGsmMdlpDXzi9eWu9vu8Vkj7A9+62PZOmcgRb9gXGPvAo0uEJZ6V0s0g9oh7a/Qe2X0/uH+uo6FEVEnql3Loom7fGIRWVb6fh0hciJVdj58kqdGeSqZ7XeiO8kqwJ88VodGZf2weSxK/sMcVutJrdYVyZ8+9OZIq85w12vaESS5Da4N9RbYfcSjMJn4cgrKgtm3zKK7+ucohSEJHT6Xy+lhPI8L5wMMmF6IgcI5aVutIL0nix1kz0U2+r0cfZdCFwExX7U2ug9Gw2cejkfrjpcH3gzS00oTX/ZvXsVDWBVzysok/wiILX8lQ4mu73fu6mbROfImJrXYX6R+Q6uTQ6WAPJryjOJhgFdKidBbxh5hk0jrpQ/4g0d4f47N6AobZS9We/xsS9rQMirrek59y+kehbMgycUhX5daIPHFH0LriUMe40V56GZjmTKzPsL9VIH6N6Xlp62S8xaeHP8xyeo0rCqm+K+8HXkj4rtQQGH5X3pTDd6WkISmoO6hE7dGXuBr08zamUKkcRBnSFP6vL3GNWi9ZtzXAqH8AbkAf/FENMJAAAAAASUVORK5CYII="/>
+                              </svg> 4-разовое питание
+                        </div>
+
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADt0lEQVRYhb2YW0hVQRiFP/VYlnRRqUy7UoGVafTgS1EYQRFUVBhRdEHEHvIlutBLImHQi5RE9RJELwVFghFkBd0MKgjMbpRhRZKlgaWViZbGyNqy2+3b8bbgMOfMzP+v5eyZNf825vrprUSJmcBGYDkwH0gH4oA/wEfgBXALuAy8iyZ1bBRzc4BrwGsgF7gBbAPmAElqt6k/V/OuKS4UIiEmjQLKgB3ACWAn0OQy75tW4h5wHJgE7AFuA+eAvcCvgazMFOABsBDIAg56CHFDk+ZnKf6B8vVLTBpwB6gBlgH1IUU4Ua/4GuVLi1ZMAnAVuA/kA139FGKhS3nuK29CNGKOAp1AIdATQJQKNKr1Q4/ydSp/KDHZCtquwCDsAiarDUKn8haKJ1BMMXAaqAuRPF4ijqmNDxFTp/zFQWKMga3RUQ6DDcB3YJ/aDSHjysST7icmT+7ZGDJpEXAK6FZbFDKuUTx5fmJWAFUeCY4AV4BHQIOefyZwVuOmXaD+Bs27ojg3VImvD04HNslKPYLTFbwbeAV8Bj4BHRpv04marDYDOAm0eOR7KIfug/2ijNFyTwS+uASPACqAscAqoN2DxGC0/vI27SO3UzlBLh1n2Yf9MY1T+9WDwCTcpMBLEueGERrv1nwve/iqBbB4/xHzW63f8TSrsVaXYInHnBKNrwtYPYunz93tYn5oIMUngUGrbN1LdLzGWwPypIjvp5sYgzfA3IAkyD1rbb/tV0Gtm7u6YK74+uAU8xhYEiJRlkgXATd1qm7qd63Gg7BEfJ5iquSMfpgKJAOHgGrgCTBLbbX6kzXPD2ucnuYUUwnMlpn5LW+39pjxkv3AW7UZ6u/Wdy9kiqfSPm58JtVRXywFntmOeJcKbQvxMsD3PmQzFGOvg9Jtmz5Jgqpt4x0RuWmifVc7YExunuZZ4vyE4DJuVumlTNANvfyxqsBMobwYGO/y+eBVmUWBBOVxy79Y/PkRWXy2nl+O7S4x7jhNVVm7lr6/aFee6RJlVY/J4jX1UIV1UZbokrwIrNQL2Wbg/ABXxA1bgAu6kwzfU8vNrdPUo3LQbObD6hsp1TGD+KlUXsSTKt7/LspEXVrNQ7AabmgWX6I1ZomxyoO7QPkwiSkXX4VVAVhiTqmjYJiEWCgQr+HvrfRM3bpeZpegz58hFjFGGxi9u5v38ycRlZnm2T23TTZiDgyRkGS5e5yjvzRWxuM8MRGf2nWgaFF+J+f4oH+JmLvEiB0s+L7k+Ykxldpqn5q4vzjjGgj8BSW318IPh4PEAAAAAElFTkSuQmCC"/>
+                              </svg> Мастер-классы от звезд украинского хоккея
+                        </div>
+                        <div class="paket__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="34" viewBox="0 0 37 34">
+                                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="37" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAiCAYAAADYmxC7AAAC30lEQVRYhd2YSWgUURCGv8RxTUSNBw/qoKBEJURw15NGY/QgxmW8RDwGDYJe9KJgQFxQUPDg4MkF9aBgwlw0QYJ6EEERghclChIXXNAojiAaM1Lwj/Q0PU53050Bf2hev1fvVf39ul51VVd0pVuyQBWF6AA2A/OBSS5ZFBgAeoEbwCaXvu8JEapwDDYDe3V/ApgSA6n3QBNQI1KdDlkuUWTRkNqmGAh52SmAF6m7wOuYyeSxH3hRjJS9shxwR+/70TCRytuZAKzMu5GRysiHjNSbYSTkxGxxMFIZI7WxDCTcsI1YlR+rBOpd3u+FduBLBFd7CTvGoz6hYzmjxOTjwIUIduRdCbnxqCkWEtz4AbyMgJQv+CXlRAo4EGD+EeB63KRuAx8DzO8NaiAMqQHFs9hQGafysIiC1DggDTxVO7acpCy16QM+AbOAVkXmzxp3pyS+EcanDGOAS8B24KE+T4Y1wFRgCXAZmKxwEghhdyolIp0yehLoBk6p3yF5KozyMKQWy3f2ACOBHqAWuALMBO4BoyRPa37spBqBa8AtYLUc3fzrIrBVLrEWuKmg2RiGlDnl1QBr7gPrgdHAeAXSQcl+q1+l3Vqn+X5hPPqscAj6ICiALgS+KnM8qF3ZAhzTKawGHgMTgyq3ncoqwbOrwec6M/hL4WAD0KYMYLf6HySv9qmvwcEh61XN+MF5fWoOK6WZ51qzAzgUIN3pcXDIeTl6rZ78X9gJ7ANOKzaZsy/SA5rzn5G8tYSeNtkrgFfwnAtsA84q+JkzuzGkQnKBTuGgslIrXEcobpk8WeSEf9OrNztvgWdepJodY0sd91ZuTfNQmtMJfA50AbuAfmA6cE5GlikseLmGlXB1Hvb+kso4KuI8utXWuRe4MEcO3a/hV8BP3T/wUfJ3K6Ytd4yVvZo5qqsA/20+FTmiIpXUa0hGoSwKUhYWngAr1Fq/rKTsE2UxykKK/aCw1vo2Hg7AH9anpmr0BBJeAAAAAElFTkSuQmCC"/>
+                              </svg> Сертификат об окончании Hockey Star Camp
+                        </div>
+                        <a class="paket__link" href="">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="wrap">
+            <div class="slider__wrap">
+                <h2 class="title" id="sec8">видео
+
+                    <div class="slider__arrow">
+                        <button type="button" id="video-prev">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M36.334,3.652 L19.007,21.144 L36.334,38.640 L21.636,38.640 L4.308,21.144 L21.636,3.652 L36.334,3.652 Z"/>
+                            </svg>
+                        </button>
+                        <button type="button" id="video-next">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M4.315,38.640 L21.642,21.146 L4.315,3.652 L19.013,3.652 L36.341,21.146 L19.013,38.640 L4.315,38.640 Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </h2>
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="https://www.youtube.com/embed/bBa95z79bis">
+                                    <img src="./img/gallery/1.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="https://www.youtube.com/embed/bBa95z79bis">
+                                    <img src="./img/gallery/2.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="https://www.youtube.com/embed/bBa95z79bis">
+                                    <img src="./img/gallery/3.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="https://www.youtube.com/embed/bBa95z79bis">
+                                    <img src="./img/gallery/3.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="https://www.youtube.com/embed/bBa95z79bis">
+                                    <img src="./img/gallery/3.png">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M36.334,3.652 L19.007,21.144 L36.334,38.640 L21.636,38.640 L4.308,21.144 L21.636,3.652 L36.334,3.652 Z"/>
+                            </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M4.315,38.640 L21.642,21.146 L4.315,3.652 L19.013,3.652 L36.341,21.146 L19.013,38.640 L4.315,38.640 Z"/>
+                            </svg>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="slider__wrap">
+                <h2 class="title">фото
+
+                    <div class="slider__arrow">
+                        <button type="button" id="video-prev2">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M36.334,3.652 L19.007,21.144 L36.334,38.640 L21.636,38.640 L4.308,21.144 L21.636,3.652 L36.334,3.652 Z"/>
+                            </svg>
+                        </button>
+                        <button type="button" id="video-next2">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M4.315,38.640 L21.642,21.146 L4.315,3.652 L19.013,3.652 L36.341,21.146 L19.013,38.640 L4.315,38.640 Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </h2>
+                <div class="swiper-container2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="./img/gallery/3.png">
+                                    <img src="./img/gallery/1.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="./img/gallery/3.png">
+                                    <img src="./img/gallery/2.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="./img/gallery/3.png">
+                                    <img src="./img/gallery/3.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="./img/gallery/3.png">
+                                    <img src="./img/gallery/3.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__item">
+                                <a data-fslightbox="gallery" href="./img/gallery/3.png">
+                                    <img src="./img/gallery/3.png">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-prev swiper-button-prev2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M36.334,3.652 L19.007,21.144 L36.334,38.640 L21.636,38.640 L4.308,21.144 L21.636,3.652 L36.334,3.652 Z"/>
+                            </svg>
+                    </div>
+                    <div class="swiper-button-next swiper-button-next2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="43px">
+                                <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(185, 151, 91)" fill-opacity="0" fill="rgb(25, 6, 30)"
+                                d="M4.315,38.640 L21.642,21.146 L4.315,3.652 L19.013,3.652 L36.341,21.146 L19.013,38.640 L4.315,38.640 Z"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="wrap">
+            <h2 class="title" id="sec9">Контакты</h2>
+            <div class="contact__wrap">
+                <div class="item">
+                    <div class="left">Email:</div>
+                    <a href="mailto:hockeystarcamping@gmail.com" class="right">hockeystarcamping@gmail.com </a>
+                </div>
+                <div class="item">
+                    <div class="left">Телефон:</div>
+                    <a href="tel:+380638551175" class="right">+38 (063) 855 11 75</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__fon">
+            <div class="wrap">
+                <div class="footer__row">
+                    <div class="footer__logo">
+                        <img src="./img/footer-logo.png">
+                        <div>
+                            <span>Хоккейный лагерь</span>
+                            <span>hockey star camp</span>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <img src="./img/footer-l1.png">
+                        <img src="./img/footer-l2.png">
+                    </div>
+                </div>
+                <div class="footer__bot">
+                    <ul class="f-social-icon">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/starhockeycamp"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/starhockeycamp"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                        </li>
+                    </ul>
+                    <span>© Hockey Star Camp, 2021 <br>Все права защищены. <br> При использовании материалов сайта ссылка на hockeystarcamp.com обязательна.</span>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 
-
-<script src="./js/main.js?v=f62ff6701b949094065c91dc772bfb2a"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./libs/fslightbox.js"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>
