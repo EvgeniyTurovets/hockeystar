@@ -17,8 +17,10 @@
         <div class="anketa__header">
             <h1>
                 ЗАЯВКА НА РЕГИСТРАЦИЮ В HOCKEY STAR CAMP
+
             </h1>
         </div>
+        <h2 class="title" <span id="paket-modal-name">Пакет Базовый</h2>
         <form id="ank">
             <label class="label">
                 Ф.И.О. участника <span>*</span> 
@@ -155,18 +157,6 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let ankForm = document.getElementById('ank')
-        let modalSenk = document.getElementById('modal')
-        console.log(ankForm)
-        ankForm.addEventListener('submit', function(e) {
-            e.preventDefault()
-            modalSenk.classList.add('active')
-
-        })
-    })
-</script>
 </body>
 
 </html>

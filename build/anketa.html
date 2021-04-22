@@ -7,9 +7,9 @@
     <title>hockey star camp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap&v=71c6c565efc46a4a696ccd5b9888ac1b" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?v=71c6c565efc46a4a696ccd5b9888ac1b" />
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css?v=71c6c565efc46a4a696ccd5b9888ac1b'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
 </head>
 
 <div class="app">
@@ -17,8 +17,10 @@
         <div class="anketa__header">
             <h1>
                 ЗАЯВКА НА РЕГИСТРАЦИЮ В HOCKEY STAR CAMP
+
             </h1>
         </div>
+        <h2 class="title" <span id="paket-modal-name">Пакет Базовый</h2>
         <form id="ank">
             <label class="label">
                 Ф.И.О. участника <span>*</span> 
@@ -155,18 +157,6 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let ankForm = document.getElementById('ank')
-        let modalSenk = document.getElementById('modal')
-        console.log(ankForm)
-        ankForm.addEventListener('submit', function(e) {
-            e.preventDefault()
-            modalSenk.classList.add('active')
-
-        })
-    })
-</script>
 </body>
 
 </html>

@@ -1490,6 +1490,7 @@ img {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-color: #fff;
+    margin-bottom: -1px;
 }
 
 .footer {
@@ -1622,6 +1623,8 @@ img {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 60px;
+    background-color: #fff;
+    margin: 0 auto;
 }
 
 .anketa__header {
@@ -1641,8 +1644,9 @@ img {
 }
 
 .anketa form {
-    margin: 0 50px;
+    padding: 0 50px;
     padding-top: 35px;
+    overflow: hidden;
 }
 
 .anketa .label {
@@ -1791,12 +1795,18 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba($color: #000000, $alpha: 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    padding: 50px 0;
     display: none;
+    overflow: auto;
+    z-index: 999;
+}
+
+.modal2 {
+    padding: 20px;
+    z-index: 999;
 }
 
 .modal.active {
@@ -1804,6 +1814,7 @@ img {
 }
 
 .modal__wrap {
+    margin: 0 auto;
     position: relative;
     width: 100%;
     max-width: 500px;
@@ -1828,6 +1839,7 @@ img {
         svg {
             width: 20px;
         }
+        cursor: pointer;
     }
 }
 
@@ -1841,7 +1853,8 @@ img {
         font-size: 20px;
     }
     .anketa form {
-        margin: 0 25px;
+        padding: 0 25px;
+        padding-top: 35px;
     }
     .anketa .label {
         font-size: 14px;
@@ -1870,5 +1883,41 @@ img {
 @media(max-width: 424px) {
     .modal__wrap {
         font-size: 20px;
+    }
+}
+
+.anketa {
+    position: relative;
+}
+
+.anketa .close {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    cursor: pointer;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.anketa .close:hover {
+    transform: translateY(-100%) scale(1.1);
+    transition: 0.3s all;
+}
+
+.anketa .title {
+    padding: 0 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media(max-width: 600px) {
+    .anketa .title {
+        padding: 0 25px;
     }
 }

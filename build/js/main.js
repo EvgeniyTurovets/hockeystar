@@ -112,4 +112,52 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
+    let modalTitle = document.getElementById('paket-modal-name')
+    let ankForm = document.getElementById('ank')
+    let modalSenk = document.getElementById('modal')
+
+    ankForm.addEventListener('submit', function(e) {
+        e.preventDefault()
+        modalAnk.classList.remove('active')
+        modalSenk.classList.add('active')
+
+    })
+
+    let modalAnk = document.getElementById('ankModal')
+    let customBtn = document.getElementById('customBtn')
+    let premiumbBtn = document.getElementById('premiumbBtn')
+
+    customBtn.addEventListener('click', function() {
+        modalTitle.textContent = "пакет Базовый"
+        document.querySelector('body').style.overflow = 'hidden'
+        modalAnk.classList.add('active')
+    })
+
+    premiumbBtn.addEventListener('click', function() {
+        modalTitle.textContent = "пакет Премиум"
+        document.querySelector('body').style.overflow = 'hidden'
+        modalAnk.classList.add('active')
+    })
+
+    let closeBtn = document.querySelectorAll('.close')
+    for (let btn of closeBtn) {
+        btn.addEventListener('click', () => {
+            btn.closest('.modal').classList.remove('active')
+            document.querySelector('body').style.overflow = 'initial'
+        })
+    }
+
+
+    let popups = document.querySelectorAll('.modal');
+    for (let popup of popups) {
+        popup.addEventListener('click', function(e) {
+            let target = e.target.closest('.modal-content')
+            if (!target) {
+
+                popup.classList.remove('active')
+                document.querySelector('body').style.overflow = 'initial'
+            }
+        })
+    }
+
 })
