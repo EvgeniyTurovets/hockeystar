@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+
+
     const swiper = new Swiper('.swiper-container', {
         spaceBetween: 70,
         slidesPerView: 1,
@@ -92,6 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
 
+
+
     const anchors = document.querySelectorAll('a[href*="#"]')
 
     for (let anchor of anchors) {
@@ -106,4 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
             })
         })
     }
+
+
 })

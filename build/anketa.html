@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>hockey star camp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+</head>
+
+<div class="app">
+    <div class="anketa">
+        <div class="anketa__header">
+            <h1>
+                ЗАЯВКА НА РЕГИСТРАЦИЮ В HOCKEY STAR CAMP
+            </h1>
+        </div>
+        <form id="ank">
+            <label class="label">
+                Ф.И.О. участника <span>*</span> 
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Место проживания участника <span class="mini">(индекс, город, улица, дом/квартира)</span> <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <div class="ank__row">
+                <div class="col">
+                    <label class="label">
+                        Рост участника <span>*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+                <div class="col">
+                    <label class="label">
+                        Вес участника <span>*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+
+                <div class="col">
+                    <label class="label">
+                        Размер ноги участника <span>*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+                <div class="col">
+                    <label class="label">
+                        Размер майки участника <span>*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+
+                <div class="col">
+                    <label class="label">
+                        Хват руки участника <span>*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+                <div class="col">
+                    <label class="label">
+                        Стаж занятия хоккеем <span>*</span>
+                    </label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <label class="label">
+                Команда, за которую участник выступал в сезоне <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Клуб, хоккейная школа <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Тренер команды <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Тренер вратарей <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Мобильный телефон участника <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Адрес электронной почты участника <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Ф.И.О. одного из родителей <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Мобильный телефон одного из родителей <span>*</span>
+            </label>
+            <input type="text" required>
+
+            <label class="label">
+                Дата заезда  <span>*</span>
+            </label>
+            <div class="select">
+                <select>
+                    <option>
+                        1-7 июня 2021 г.
+                    </option>
+                </select>
+            </div>
+            <div class="ank-text"><span>*</span> — поля, обязательны для заполнения </div>
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                <span></span>
+                <p>Ознакомлен с <a href="" target="_blank">Правилами внутреннего распорядка</a> лагеря и подтверждаю их выполнение участником лагеря</p>
+
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                <span></span>
+                <p>Даю свое согласие на обработку персональных данных без ограничения объема таких данных и срока их обработки</p>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                <span></span>
+                <p>Присоединяюсь к сообществу Hockey Star Camp в Facebook</p>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                <span></span>
+                <p>Присоединяюсь к сообществу Hockey Star Camp в Instagram</p>
+            </label>
+
+            <button type="submit" class="ank-sub">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </form>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__wrap">
+            <div class="close"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg></div>
+            Спасибо!<br> мы свяжемся с Вами
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let ankForm = document.getElementById('ank')
+        let modalSenk = document.getElementById('modal')
+        console.log(ankForm)
+        ankForm.addEventListener('submit', function(e) {
+            e.preventDefault()
+            modalSenk.classList.add('active')
+
+        })
+    })
+</script>
+</body>
+
+</html>
