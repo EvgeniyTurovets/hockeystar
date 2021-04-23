@@ -113,28 +113,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     let modalTitle = document.getElementById('paket-modal-name')
-    let ankForm = document.getElementById('ank')
-    let modalSenk = document.getElementById('modal')
-
-    ankForm.addEventListener('submit', function(e) {
-        e.preventDefault()
-        modalAnk.classList.remove('active')
-        modalSenk.classList.add('active')
-
-    })
-
+    let modalTitleInput = document.getElementById('paket-modal-name2')
     let modalAnk = document.getElementById('ankModal')
     let customBtn = document.getElementById('customBtn')
     let premiumbBtn = document.getElementById('premiumbBtn')
 
     customBtn.addEventListener('click', function() {
         modalTitle.textContent = "пакет Базовый"
+        modalTitleInput.value = "пакет Базовый"
+        console.log(modalTitleInput.value)
         document.querySelector('body').style.overflow = 'hidden'
         modalAnk.classList.add('active')
     })
 
     premiumbBtn.addEventListener('click', function() {
         modalTitle.textContent = "пакет Премиум"
+        modalTitleInput.value = "пакет Премиум"
+        console.log(modalTitleInput.value)
         document.querySelector('body').style.overflow = 'hidden'
         modalAnk.classList.add('active')
     })
@@ -160,4 +155,23 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
+
+    let ankForm = document.getElementById('ank')
+    let modalSenk = document.getElementById('modal')
+
+    ankForm.addEventListener('submit', function(e) {
+        e.preventDefault()
+
+
+        const formData = new FormData(this);
+        fetch('./php/mail.php', {
+            method: 'POST',
+            body: formData,
+        }).then(function(response) {
+            modalAnk.classList.remove('active')
+            modalSenk.classList.add('active')
+        }).catch(function(error) {
+            console.log('Что то пошло не так')
+        });
+    })
 })

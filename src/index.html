@@ -6,6 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>hockey star camp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -830,34 +831,35 @@
                 </h1>
             </div>
             <h2 class="title" id="paket-modal-name"></h2>
-            <form id="ank">
+            <form id="ank" action="./php/mail.php" methot="post">
+                <input name="paket" type="text" id="paket-modal-name2" style="display:none;">
                 <label class="label">
                     Ф.И.О. участника <span>*</span> 
                 </label>
-                <input type="text" required>
+                <input name="name1" type="text" required>
 
                 <label class="label">
                     Место проживания участника <span class="mini">(индекс, город, улица, дом/квартира)</span> <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name2" type="text" required>
 
                 <label class="label">
                     Дата рождения участника <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name3" type="text" required>
 
                 <div class="ank__row">
                     <div class="col">
                         <label class="label">
                             Рост участника <span>*</span>
                         </label>
-                        <input type="text" required>
+                        <input name="name4" type="text" required>
                     </div>
                     <div class="col">
                         <label class="label">
                             Вес участника <span>*</span>
                         </label>
-                        <input type="text" required>
+                        <input name="name5" type="text" required>
                     </div>
 
 
@@ -865,7 +867,7 @@
                         <label class="label">
                             Размер майки участника <span>*</span>
                         </label>
-                        <input type="text" required>
+                        <input name="name6" type="text" required>
                     </div>
 
 
@@ -873,54 +875,54 @@
                         <label class="label">
                             Стаж занятия хоккеем <span>*</span>
                         </label>
-                        <input type="text" required>
+                        <input name="name7" type="text" required>
                     </div>
                 </div>
                 <label class="label">
                     Команда, за которую участник выступал в сезоне <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name8" type="text" required>
 
                 <label class="label">
                     Клуб, хоккейная школа <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name9" type="text" required>
 
                 <label class="label">
                     Тренер команды <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name10" type="text" required>
 
                 <label class="label">
                     Тренер вратарей <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name11" type="text" required>
 
                 <label class="label">
                     Мобильный телефон участника <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name12" type="text" required>
 
                 <label class="label">
                     Адрес электронной почты участника <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name13" type="text" required>
 
                 <label class="label">
                     Ф.И.О. одного из родителей <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name14" type="text" required>
 
                 <label class="label">
                     Мобильный телефон одного из родителей <span>*</span>
                 </label>
-                <input type="text" required>
+                <input name="name15" type="text" required>
 
                 <label class="label">
                     Дата заезда  <span>*</span>
                 </label>
                 <div class="select">
-                    <select>
+                    <select name="name16">
                         <option>
                             1-7 июня 2021 г.
                         </option>
@@ -932,17 +934,17 @@
                 <div class="ank-text"><span>*</span> — поля, обязательны для заполнения </div>
 
                 <label class="checkbox">
-                    <input type="checkbox" checked required>
+                    <input type="checkbox" required>
                     <span></span>
                     <p>Даю свое согласие на обработку персональных данных без ограничения объема таких данных и срока их обработки</p>
                 </label>
                 <label class="checkbox">
-                    <input type="checkbox" checked>
+                    <input type="checkbox">
                     <span></span>
                     <p>Присоединяюсь к сообществу <a href="https://www.facebook.com/starhockeycamp" target="_blank">Hockey Star Camp в Facebook</a></p>
                 </label>
                 <label class="checkbox">
-                    <input type="checkbox" checked>
+                    <input type="checkbox">
                     <span></span>
                     <p>Присоединяюсь к сообществу <a href="https://www.instagram.com/starhockeycamp/" target="_blank">Hockey Star Camp в Instagram</a></p>
                 </label>
